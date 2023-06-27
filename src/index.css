@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--navy);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* --gray: #8892B0; */
+:root {
+  --orange: rgb(218, 157, 43);
+  --lightorange: rgb(233, 203, 112);
+  --navy: #011627;
+  --lightNavy: rgb(2, 36, 63);
+  --lighterNavy: rgb(14, 64, 104);
+  --white: #eff0f3;
+  --gray: #bdc2d5;
+  --dark:#484d5c;
+  --black:#010d17;
+}
+
+/* :root {
+  --green: rgb(99, 255, 219);
+  --darkgreen: #032a2a;
+  --navy: #011627;
+  --lightNavy: rgb(2, 36, 63);
+  --white: #CCD6f6;
+  --gray: #8892B0;
+  --dark:#484d5c;
+  --black:#010d17;
+} */
+
+/* ------ Adding Style to Scrollbar ------ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--dark); 
+  border-radius: 5px;
+}
