@@ -115,8 +115,17 @@ function App() {
   const [experiences, setExperiences] = useState([
     {
       id: 1,
-      title: "AI Developer",
+      title: "MSc. Student",
       isSelected: true,
+      company: "Simon Fraser University",
+      location: "Vancover, Canada",
+      date: "Sep. 2023 - Present",
+      content: "Master of Science in School of Interacting Arts & Technology. Research assistant at Learning Analytics Lab under the supervision of Professor Marek Hatala.",
+    },
+    {
+      id: 2,
+      title: "AI Developer",
+      isSelected: false,
       company: "Roshan AI",
       location: "Tehran, Iran",
       date: "Jun. 2021 - Dec. 2021",

@@ -12,7 +12,7 @@ const Introduction = () => {
         <div className="main-content-intro">
             <p className="main-content-p" data-aos="fade-up">Hi, my name is</p>
             <h1 data-aos="fade-down">Mohammadreza</h1>
-            <h2 data-aos="fade-down">I'm a Graduated Computer Engineering Student</h2>
+            <h2 data-aos="fade-down">I'm a Graduate Student</h2>
             <p className="main-content-desc intro-p" data-aos="fade-down">
                 I have a great passion to code and learn new technologies and tools.
             </p>

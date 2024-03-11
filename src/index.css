@@ -4,7 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--navy);
+  background-color: var(--dark);
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -22,12 +22,12 @@ code {
 :root {
   --orange: rgb(218, 157, 43);
   --lightorange: rgb(233, 203, 112);
-  --navy: #011627;
+  --navy: #5bc24e;
   --lightNavy: rgb(2, 36, 63);
   --lighterNavy: rgb(14, 64, 104);
   --white: #eff0f3;
   --gray: #bdc2d5;
-  --dark:#484d5c;
+  --dark:#484d5d;
   --black:#010d17;
 }
 
