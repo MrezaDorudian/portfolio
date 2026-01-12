@@ -2,12 +2,12 @@
 fill: var(--gray);
 position:relative;
 top: 0px;
+transition: fill 0.2s ease, transform 0.2s ease;
 }
 
 .social-links svg:hover{
     fill: var(--orange) !important;
-    animation: social 0.5s forwards;
-    -webkit-animation: social 0.5s forwards;
+    transform: translateY(-2px);
 }
 
 @keyframes social{

@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-
 .main-wrapper{
     display: flex;  
 }
 
 .main-wrapper::selection{
     background-color: var(--lightorange);
-    color:var(--dark);
+    color: var(--white);
 }
 
 .main-content{
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 4.5rem 1.75rem 3rem 1.75rem;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .blur{
@@ -32,7 +32,7 @@ filter: blur(5px);
 
 @media only screen and (min-width: 320px){
     .main-content{
-        padding: 3rem 3rem 2rem 3rem;
+        padding: 4.5rem 3rem 3rem 3rem;
     }
 }
 
@@ -63,7 +63,7 @@ filter: blur(5px);
     
     .nav-line{
         height: 150px;
-        background-color: var(--gray);
+        background-color: var(--border);
         width: 1px;
         margin:0 auto;
     
@@ -91,10 +91,9 @@ filter: blur(5px);
 
   @media only screen and (min-width: 1024px){
     .main-content{
-        padding-top: 4rem;
+        padding-top: 5rem;
     }
   }
-
 
 
 

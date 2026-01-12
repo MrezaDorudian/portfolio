@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 1.25rem;
 }
 
 #contact-h{
@@ -12,17 +13,22 @@
 display:none !important;
 }
 
+.contact-btn{
+    margin-top: 2rem;
+    align-self: center;
+}
+
 .email-link:hover{
     background-color: var(--lightorange);
 }
 
 @media only screen and (min-width: 768px){
     #contact-h{
-        font-size:2.7rem;
+        font-size:2.4rem;
     }
 
     .contact-desc{
-        width: 500px;
+        width: 480px;
         margin: 0 auto;
         text-justify: inter-word;
     }

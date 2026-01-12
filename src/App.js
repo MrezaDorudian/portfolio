@@ -115,30 +115,30 @@ function App() {
   const [experiences, setExperiences] = useState([
     {
       id: 1,
-      title: "MSc. Student",
+      title: "Master of Science in Interactive Arts and Technology (M.Sc.)",
       isSelected: true,
       company: "Simon Fraser University",
       location: "Vancover, Canada",
-      date: "Sep. 2023 - Present",
-      content: "Master of Science in School of Interacting Arts & Technology. Research assistant at Learning Analytics Lab under the supervision of Professor Marek Hatala.",
+      date: "Sep. 2023 - Dec. 2025",
+      content: "Master of Science in Interactive Arts and Technology. Research assistant at Learning Analytics Lab under the supervision of Professor Marek Hatala.",
     },
     {
       id: 2,
-      title: "AI Developer",
+      title: "Junior Software Developer",
       isSelected: false,
-      company: "Roshan AI",
+      company: "Rosh AI",
       location: "Tehran, Iran",
-      date: "Jun. 2021 - Dec. 2021",
+      date: "Jan. 2021 - Feb. 2023",
       content: "Collaborated effectively with team members on three deep learning projects involving face recognition, OCR, and RNN models.",
     },
     {
       id: 3,
-      title: "BSc.",
+      title: "Bachelor of Science in Computer Engineering (B.Sc.)",
       isSelected: false,
       company: "Amirkabir University of Technology",
       location: "Tehran, Iran",
       date: "Sep 2018 - Feb 2023",
-      content: "BSc. in computer engineering",
+      content: "Bachelor of Science in Computer Engineering. Focus on Software Engineering and Machine Learning.",
     }
   ]);
 

@@ -2,6 +2,7 @@
         display:flex;
         flex-direction: row;
         padding-top: 2rem;
+        gap: 1rem;
 }
 
 .main-content-section{
@@ -10,13 +11,17 @@
 
 .exp-btn{
     background-color: transparent;
-    color: inherit;
+    color: var(--gray);
     border:none;
     outline:none;
     padding:1.5rem;
     width: 35vw;
     text-align: left;
     cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .exp-details{
@@ -26,7 +31,7 @@
 
 .exp-detail p::selection{
     background-color: var(--orange);
-    color:var(--dark);
+    color: var(--white);
   }
 
 .section-h-exp{
@@ -62,7 +67,8 @@ display: block;
 }
 
 .exp-btn:hover{
-    background-color: var(--lighterNavy);
+    background-color: var(--lightNavy);
+    color: var(--white);
 }
 
 @keyframes experience{
@@ -75,16 +81,16 @@ display: block;
 }
 
 .active {
-    background-color: var(--lightNavy);
-    border-left: 3px solid var(--orange);
-    color:var(--orange);
+    background-color: var(--lightorange);
+    border-left: 2px solid var(--orange);
+    color: var(--orange);
     animation: experience 2s ease-in-out;
     -webkit-animation: experience 2s ease-in-out;
     
   }
   .deactive {
     background-color: transparent;
-    border-left: 3px solid var(--gray);
+    border-left: 2px solid var(--border);
 
   }
 
@@ -96,7 +102,7 @@ display: block;
 
 @media only screen and (min-width: 768px){
     #experiences{
-        padding: 5rem;
+        padding: 4rem 0 0 0;
     }
 }
 

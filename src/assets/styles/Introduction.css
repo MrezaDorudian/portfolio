@@ -1,39 +1,52 @@
 .main-content-intro{
     display: flex;
     flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem 0 1rem 0;
+    max-width: 640px;
+}
+
+.main-content-intro::before{
+    content: "";
+    display: block;
+    width: 56px;
+    height: 1px;
+    background-color: var(--border);
+    margin-bottom: 0.5rem;
 }
 
 .main-content-intro h1{
-    font-size: 2rem;
-    margin:1rem 0 0 0;
+    font-size: 2.6rem;
+    margin: 0.75rem 0 0 0;
     color: var(--white);
  }
 
- .main-content-intro h1::selection{
+.main-content-intro h1::selection{
     background-color: var(--lightorange);
-    color:var(--dark);
+    color: var(--white);
 }
  
  .main-content-intro h2{
      font-size: 1.5rem;
-     margin:1rem 0 0 0;
+     margin: 0.75rem 0 0 0;
      color: var(--gray);
   }
 
   .main-content-intro h2::selection{
       background-color: var(--lightorange);
-      color:var(--dark);
+      color: var(--white);
   }
  
  .main-content-p{
-     font-size: 0.75rem;
-     letter-spacing: 0.2rem;
+     font-size: 0.8rem;
+     letter-spacing: 0.24rem;
+     text-transform: uppercase;
      color: var(--orange);
-     margin: 1rem 0 0 0;
+     margin: 0.5rem 0 0 0;
   }
  
  .main-content-desc{
-     font-size: 0.75rem;
+     font-size: 1rem;
      color: var(--gray);
  }
 
@@ -43,7 +56,7 @@
 
  .intro-p::selection{
     background-color: var(--lightorange);
-    color:var(--dark);
+    color: var(--white);
 }
  
  .main-content-desc a{
@@ -52,23 +65,41 @@
  }
 
  .btn{
-     font-size: 1rem;
-     font-family: 'Roboto', sans-serif; 
+     font-size: 0.95rem;
+     font-family: var(--font-body); 
      color: var(--orange);
      background-color: transparent;
-     padding: 1rem 3rem;
+     padding: 0.9rem 2.4rem;
      border: 1px solid var(--orange);
-     border-radius: 5px;
+     border-radius: 999px;
      text-decoration: none;
      text-align: center;
-     margin: 3rem auto 0 auto;
+     margin: 0;
+     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
  }
 
  .btn:hover{
         background-color: var(--lightorange);
-        color:var(--dark);
-        font-weight: bold;
+        color: var(--orange);
         border: 1px solid var(--orange);
+ }
+
+ .btn-ghost{
+     border: 1px solid var(--border);
+     color: var(--gray);
+ }
+
+ .btn-ghost:hover{
+     background-color: var(--lightNavy);
+     color: var(--white);
+     border-color: var(--border);
+ }
+
+ .intro-actions{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0.75rem;
+     margin-top: 1.25rem;
  }
 
  @media only screen and (min-width:400px) {
@@ -81,11 +112,11 @@
  @media only screen and (min-width: 768px) {
 
     .main-content-intro h1{
-        font-size: 4rem;
+        font-size: 4.1rem;
      }
      
     .main-content-intro h2{
-         font-size: 3rem;
+         font-size: 2.6rem;
       }
      
     .main-content-p{
@@ -93,7 +124,7 @@
       }
      
     .main-content-desc{
-         font-size: 1rem;
+         font-size: 1.05rem;
      }
 
   }

@@ -1,18 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap");
+
 body {
   margin: 0;
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-body);
+  color: var(--white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--dark);
+  background-image: linear-gradient(180deg, #f6f9fc 0%, #eef3f8 100%);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  
-    monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 * {
@@ -20,15 +25,19 @@ code {
 }
 /* --gray: #8892B0; */
 :root {
-  --orange: rgb(218, 157, 43);
-  --lightorange: rgb(233, 203, 112);
-  --navy: #34363a;
-  --lightNavy: rgb(2, 36, 63);
-  --lighterNavy: rgb(14, 64, 104);
-  --white: #eff0f3;
-  --gray: #bdc2d5;
-  --dark:#484d5d;
-  --black:#010d17;
+  --orange: #2b5caa;
+  --lightorange: #dde6f3;
+  --navy: #f3f6f8;
+  --lightNavy: #e7edf4;
+  --lighterNavy: #dee6ef;
+  --white: #1a2433;
+  --gray: #6e7a8a;
+  --dark: #f3f6f8;
+  --black: rgba(15, 23, 42, 0.12);
+  --border: #dee3ea;
+  --surface: #ffffff;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
 }
 
 /* :root {
@@ -49,6 +58,13 @@ code {
 }
  
 ::-webkit-scrollbar-thumb {
-  background: var(--dark); 
+  background: var(--lighterNavy);
   border-radius: 5px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
 }
